@@ -1,0 +1,27 @@
+
+
+138. Copy List with Random Pointer
+Medium
+Topics: Linked List, Hash Map
+
+You are given a linked list of length n, where each node contains an additional random pointer that can point to any node in the list, or null. Your task is to create a deep copy of this linked list.
+
+The deep copy should consist of exactly n new nodes, with the values and structure (including both next and random pointers) identical to the original list, but the new nodes must not reference any nodes from the original list.
+
+Example 1:
+Input: head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
+Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
+
+Example 2:
+Input: head = [[1,1],[2,1]]
+Output: [[1,1],[2,1]]
+
+Example 3:
+Input: head = [[3,null],[3,0],[3,null]]
+Output: [[3,null],[3,0],[3,null]]
+
+Constraints:
+
+0 <= n <= 1000
+-10⁴ <= Node.val <= 10⁴
+Node.random is null or points to a valid node in the list

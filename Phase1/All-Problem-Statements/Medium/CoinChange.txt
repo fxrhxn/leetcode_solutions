@@ -1,0 +1,27 @@
+322. Coin Change
+Medium
+Topics: Dynamic Programming, Greedy
+
+You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money. Your task is to return the fewest number of coins needed to make up that amount. If it's impossible to make up the amount using the given coins, return -1.
+
+You may assume that you have an infinite number of each type of coin.
+
+Example 1:
+Input: coins = [1,2,5], amount = 11
+Output: 3
+Explanation: 11 can be made by 5 + 5 + 1.
+
+Example 2:
+Input: coins = [2], amount = 3
+Output: -1
+Explanation: It's not possible to make 3 using just a coin of denomination 2.
+
+Example 3:
+Input: coins = [1], amount = 0
+Output: 0
+
+Constraints:
+
+1 <= coins.length <= 12
+1 <= coins[i] <= 2³¹ - 1
+0 <= amount <= 10⁴

@@ -1,0 +1,82 @@
+Word Pattern
+Easy
+Topics:
+Given a pattern and a string s, determine if s follows the same pattern.
+
+Here, "follows" means that there is a bijection between the letters in the pattern and the words in s. Specifically:
+
+Each letter in the pattern maps to exactly one unique word in s.
+Each word in s maps to exactly one unique letter in the pattern.
+No two letters map to the same word, and no two words map to the same letter.
+Example 1:
+Input:
+pattern = "abba"
+s = "dog cat cat dog"
+
+Output:
+true
+
+Explanation:
+
+'a' maps to "dog".
+'b' maps to "cat".
+Example 2:
+Input:
+pattern = "abba"
+s = "dog cat cat fish"
+
+Output:
+false
+
+Example 3:
+Input:
+pattern = "aaaa"
+s = "dog cat cat dog"
+
+Output:
+false
+
+Constraints:
+1 <= pattern.length <= 300
+pattern contains only lowercase English letters.
+1 <= s.length <= 3000
+s contains only lowercase English letters and spaces.
+All words in s are separated by a single space.
+
+
+
+----------------
+
+
+Solution Approach:
+The goal is to determine if the string s follows the same pattern as the string pattern. To achieve this, we need to ensure there is a one-to-one mapping between each character in the pattern and each word in s.
+
+Key Concepts:
+Bijection Mapping:
+
+Each letter in the pattern must map to exactly one word in s.
+Similarly, each word in s must map to exactly one letter in the pattern.
+One-to-One Correspondence:
+
+Two letters in the pattern should not map to the same word.
+Similarly, two different words in s should not map to the same letter.
+Steps:
+Split the string s into words:
+
+Since the input string s is a sentence with words separated by spaces, you can use the split() function to get a list of words.
+Check if lengths match:
+
+The length of the pattern string and the number of words in s should be the same. If not, return false immediately.
+Create two mappings:
+
+Use a dictionary char_to_word to map each letter in pattern to a corresponding word in s.
+Use another dictionary word_to_char to map each word in s to a corresponding letter in pattern.
+Iterate through the pattern and words:
+
+For each letter in the pattern and corresponding word in s:
+Check if the letter is already mapped to a word. If yes, verify that it maps to the correct word.
+Check if the word is already mapped to a letter. If yes, verify that it maps to the correct letter.
+If any mismatch occurs, return false.
+Return true:
+
+If no mismatches are found, return true at the end of the function.

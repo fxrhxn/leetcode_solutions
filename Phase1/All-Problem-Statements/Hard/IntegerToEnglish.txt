@@ -1,0 +1,20 @@
+273. Integer to English Words
+Hard
+Topics: Math, String Manipulation
+
+The task is to convert a non-negative integer into its English words representation.
+
+Example:
+
+Input: num = 123
+Output: "One Hundred Twenty Three"
+
+Input: num = 12345
+Output: "Twelve Thousand Three Hundred Forty Five"
+
+Input: num = 1234567
+Output: "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+
+Constraints:
+
+The integer num must satisfy: 0 <= num <= 2^31 - 1.
